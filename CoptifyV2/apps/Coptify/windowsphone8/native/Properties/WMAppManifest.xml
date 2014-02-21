@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">  
+    <DefaultLanguage xmlns="" code="en"></DefaultLanguage>  
+    <!--  Sample ProductID = {dc34eee1-b946-4ab2-a93a-aa794c2e5618} -->  
+    <App xmlns="" ProductID="{8f9bc696-e0b0-40fb-a4ea-58bce97f4d81}" Title="Coptify" RuntimeType="Silverlight" Version="1.0" Genre="apps.normal" Author="application's author" Description="Coptify" Publisher="application's author" PublisherID="{8ec6739a-ea33-422d-9e5a-1f7a489b2c95}">  
+        <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>  
+        <Capabilities> 
+            <Capability Name="ID_CAP_NETWORKING"/>  
+            <Capability Name="ID_CAP_MEDIALIB_AUDIO"/>  
+            <Capability Name="ID_CAP_MEDIALIB_PLAYBACK"/>  
+            <Capability Name="ID_CAP_SENSORS"/>  
+            <Capability Name="ID_CAP_WEBBROWSERCOMPONENT"/>  
+            <Capability Name="ID_CAP_LOCATION"/> 
+        </Capabilities>  
+        <Tasks> 
+            <DefaultTask Name="_default" NavigationPage="MainPage.xaml"/> 
+        </Tasks>  
+        <Tokens> 
+            <PrimaryToken TokenID="projectNameToken" TaskName="_default"> 
+                <TemplateFlip> 
+                    <SmallImageURI IsResource="false" IsRelative="true">Background.png</SmallImageURI>  
+                    <Count>0</Count>  
+                    <BackgroundImageURI IsResource="false" IsRelative="true">Background.png</BackgroundImageURI>  
+                    <Title>WPDemo</Title>  
+                    <BackContent/>  
+                    <BackBackgroundImageURI/>  
+                    <BackTitle/>  
+                    <DeviceLockImageURI/>  
+                    <HasLarge>false</HasLarge> 
+                </TemplateFlip> 
+            </PrimaryToken> 
+        </Tokens>  
+        <ScreenResolutions> 
+            <ScreenResolution Name="ID_RESOLUTION_WVGA"/>  
+            <ScreenResolution Name="ID_RESOLUTION_WXGA"/>  
+            <ScreenResolution Name="ID_RESOLUTION_HD720P"/> 
+        </ScreenResolutions> 
+    </App> 
+</Deployment>

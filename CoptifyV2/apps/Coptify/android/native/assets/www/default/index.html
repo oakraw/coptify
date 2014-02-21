@@ -1,0 +1,185 @@
+<!DOCTYPE HTML><html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta content="no" name="msapplication-tap-highlight"> 
+        <title>index</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+        <link href="worklight/worklight.css" rel="stylesheet">
+        <link href="images/favicon.png" rel="shortcut icon">
+        <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="jqueryMobile/jquery.mobile.structure-1.3.1.css" rel="stylesheet">
+        <link href="jqueryMobile/jquery.mobile.theme-1.3.1.css" rel="stylesheet">
+        <link href="jqueryMobile/jquery.mobile-1.3.1.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <script>
+		// Define WL namespace.
+		var WL = WL ? WL : {};
+		/**
+		 * WLClient configuration variables.
+		 * Values are injected by the deployer that packs the gadget.
+		 */
+		WL.StaticAppProps = {
+   "APP_DISPLAY_NAME": "Coptify",
+   "APP_ID": "Coptify",
+   "APP_SERVICES_URL": "\/apps\/services\/",
+   "APP_VERSION": "1.0",
+   "ENVIRONMENT": "android",
+   "LOGIN_DISPLAY_TYPE": "embedded",
+   "WORKLIGHT_NATIVE_VERSION": "1420749232",
+   "WORKLIGHT_PLATFORM_VERSION": "6.1.0.00.20131219-1900",
+   "WORKLIGHT_ROOT_URL": "\/apps\/services\/api\/Coptify\/android\/"
+};</script>
+		<script src="worklight/cordova.js"></script>
+		<script src="worklight/wljq.js"></script>
+		<script src="worklight/worklight.js"></script>
+		<script src="worklight/checksum.js"></script>
+		<script>window.$ = window.jQuery = WLJQ;</script>
+    		<script src="jqueryMobile/jquery.mobile-1.3.1.js"></script>
+    </head>
+    <body style="display: none;">
+        <div data-role="page" id="HomePage">    		
+            <div align="center" data-position="fixed" data-role="header" data-theme="f" id="header">
+                <img height="60em" id="head-icon" onmousedown="openFeed()" src="images/head-icon.png">
+					<div id="feedTextarea" style="display: none;">
+                    <div id="feedBox">
+                        <p>
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+							</p>
+                    </div>
+                </div>
+            </div>			
+            <div align="center" data-role="content" id="content" style="margin-top:1em; padding: 0.05em;">
+                <input id="call-icon" src="images/call-icon.png" type="image" width="300em"> 
+                <div style="display: inline; position: relative; ">
+                    <input id="camera-icon" src="images/camera-icon.png" type="image" width="148em"> 
+					<input id="edit-icon" src="images/editimage-icon.png" type="image" width="148em"> 
+                </div>
+                <input id="contact-icon" src="images/contact-icon.png" type="image" width="300em">
+            </div>
+        </div>
+        <div data-role="page" id="CallPage">
+            <div data-position="fixed" data-role="header" data-theme="f" id="header0" style="height:4em;;">
+                <a data-corners="true" data-direction="reverse" data-icon="back" data-iconpos="notext" data-rel="back" data-role="button" data-shadow="true" data-transition="slide" href="#" id="backButton" style="color: white; text-decoration: none; 
+					margin-top:0.2em; height:3em;"></a>
+                <h3 style="font-family: Source Sans Pro; font-size: x-large; vertical-align: middle">Coptify</h3>
+            </div>
+            <div data-role="content" style="padding: 15px">
+					<!--application UI goes here-->
+		    			เรื่อง<br>
+                <input type="text">
+		    			ชื่อผู้แจ้ง<br>
+                <input type="text">
+		    			รูปภาพ<br>
+                <div data-role="collapsible" id="addImage">
+                    <h3>เพิ่มรูปภาพ</h3>
+                    <div align="center" id="addedImage">
+                        <img border="0" height="100" onclick="AddNewImage()" src="images/icon.png" width="100">
+							</div>
+                </div>
+                <br>
+						รายละเอียด<br>
+                <textarea id="textarea">
+						</textarea>
+                <div style="padding-top:1em; float: left;">
+							ตำแหน่ง (GPS):
+						</div>
+                <div style="float: right;">
+                    <select data-role="slider" id="flip" name="flip">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+							</select>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button type="button">ส่ง</button>
+            </div>
+        </div>
+        <div data-role="page" id="ContactPage">
+            <div data-position="fixed" data-role="header" data-theme="f" id="header0" style="height:4em;;">
+                <a data-corners="true" data-direction="reverse" data-icon="back" data-iconpos="notext" data-rel="back" data-role="button" data-shadow="true" data-transition="slide" href="#" id="backButton" style="color: white; text-decoration: none; 
+					margin-top:0.2em; height:3em;"></a>
+                <h3 style="font-family: Source Sans Pro; font-size: x-large; vertical-align: middle">Coptify</h3>
+            </div>
+            <div data-role="content" style="-ms-touch-action:auto;">
+                <ul data-filter="true" data-filter-theme="d" data-inset="true" data-role="listview" data-split-theme="c" data-theme="f" id="listview">
+                    <li id="listitem">
+                        <a data-transition="slide" href="#">191<br>แจ้งเหตุด่วน-เหตุร้ายทุกชนิด</a>
+                    </li>
+                    <li id="listitem0">
+                        <a href="#">199<br>แจ้งอัคคีภัย สัตว์เข้าบ้าน</a>
+                    </li>
+                    <li id="listitem1">
+                        <a href="#">Item</a>
+                    </li>
+                    <li id="listitem1">
+                        <a href="#">Item</a>
+                    </li>
+                    <li id="listitem1">
+                        <a href="#">Item</a>
+                    </li>
+                    <li id="listitem1">
+                        <a href="#">Item</a>
+                    </li>
+                    <li id="listitem1">
+                        <a href="#">Item</a>
+                    </li>
+                    <li id="listitem1">
+                        <a href="#">Item</a>
+                    </li>
+                    <li id="listitem1">
+                        <a href="#">Item</a>
+                    </li>
+                    <li id="listitem1">
+                        <a href="#">Item</a>
+                    </li>
+                    <li id="listitem1">
+                        <a href="#">Item</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="dialog" id="dialogContact">
+            <div data-role="header" data-theme="f" id="header1">
+                <h3>Emergency Call</h3>
+            </div>
+            <div align="center" data-role="content" id="content0">
+                <br>
+                <div id="dialogPNO" style="font-size: 5em;"></div>
+                <br>
+                <div id="dialogName"></div>
+                <br>
+                <br>
+                <a data-role="button" data-theme="e" href="" id="buttonCall">โทร</a>
+            </div>
+        </div>
+        <script src="js/initOptions.js"></script>
+    		<script src="js/main.js"></script>
+    		<script src="js/messages.js"></script>
+    </body>
+</html>

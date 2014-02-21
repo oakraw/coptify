@@ -1,0 +1,15 @@
+C:\Users\oakraw90\workspace\CoptifyV2\apps\Coptify\windowsphone8\native\Bin\Debug\ApplicationIcon.png
+C:\Users\oakraw90\workspace\CoptifyV2\apps\Coptify\windowsphone8\native\Bin\Debug\Background.png
+C:\Users\oakraw90\workspace\CoptifyV2\apps\Coptify\windowsphone8\native\Bin\Debug\Coptify.dll
+C:\Users\oakraw90\workspace\CoptifyV2\apps\Coptify\windowsphone8\native\Bin\Debug\Coptify.pdb
+C:\Users\oakraw90\workspace\CoptifyV2\apps\Coptify\windowsphone8\native\Bin\Debug\AppManifest.xaml
+C:\Users\oakraw90\workspace\CoptifyV2\apps\Coptify\windowsphone8\native\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\oakraw90\workspace\CoptifyV2\apps\Coptify\windowsphone8\native\Bin\Debug\Coptify.xap
+C:\Users\oakraw90\workspace\CoptifyV2\apps\Coptify\windowsphone8\native\Bin\Debug\WLWPNativeLib.dll
+C:\Users\oakraw90\workspace\CoptifyV2\apps\Coptify\windowsphone8\native\Bin\Debug\WPCordovaClassLib.dll
+C:\Users\oakraw90\workspace\CoptifyV2\apps\Coptify\windowsphone8\native\obj\Debug\App.g.cs
+C:\Users\oakraw90\workspace\CoptifyV2\apps\Coptify\windowsphone8\native\obj\Debug\MainPage.g.cs
+C:\Users\oakraw90\workspace\CoptifyV2\apps\Coptify\windowsphone8\native\obj\Debug\Coptify.g.resources
+C:\Users\oakraw90\workspace\CoptifyV2\apps\Coptify\windowsphone8\native\obj\Debug\Coptify.dll
+C:\Users\oakraw90\workspace\CoptifyV2\apps\Coptify\windowsphone8\native\obj\Debug\Coptify.pdb
+C:\Users\oakraw90\workspace\CoptifyV2\apps\Coptify\windowsphone8\native\obj\Debug\XapCacheFile.xml

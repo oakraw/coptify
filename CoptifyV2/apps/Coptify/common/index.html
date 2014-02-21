@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+    	<head>
+    		<meta charset="UTF-8">
+    		<meta name="msapplication-tap-highlight" content="no" /> 
+    		<title>index</title>
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    		<link rel="shortcut icon" href="images/favicon.png">
+    		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    		<link href="jqueryMobile/jquery.mobile.structure-1.3.1.css" rel="stylesheet">
+    		<link href="jqueryMobile/jquery.mobile.theme-1.3.1.css" rel="stylesheet">
+    		<link href="jqueryMobile/jquery.mobile-1.3.1.css" rel="stylesheet">
+    		<link rel="stylesheet" href="css/main.css">
+    		<script>window.$ = window.jQuery = WLJQ;</script>
+    		<script src="jqueryMobile/jquery.mobile-1.3.1.js"></script>
+    		
+    	</head>
+    	<body style="display: none;">
+    		<div data-role="page" id="HomePage" >    		
+				<div data-role="header"  data-theme="f" id="header" data-position="fixed" align="center">
+					<img id="head-icon" src="images/head-icon.png"  height="60em" onmousedown="openFeed()">
+					<div id="feedTextarea" style="display: none;">
+						<div id="feedBox">
+							<p>
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+								12345423156454321564145412312312
+								1231561534531231
+							</p>
+						</div>
+					</div>
+				</div>			
+				
+				<div id="content" data-role="content" style="margin-top:1em; padding: 0.05em;" align="center" >
+					<input type="image" id="call-icon" src="images/call-icon.png" width="300em"> 
+					<div style="display: inline; position: relative; ">
+					<input type="image" id="camera-icon" src="images/camera-icon.png" width="148em" > 
+					<input type="image" id="edit-icon" src="images/editimage-icon.png" width="148em"> 
+					</div>
+					<input type="image" id="contact-icon" src="images/contact-icon.png" width="300em">
+				</div>
+    		</div>
+    		    		
+    		<div data-role="page" id="CallPage">
+				<div data-role="header" id="header0" data-theme="f" style="height:4em;;" data-position="fixed">
+					<a href="#" data-role="button" id="backButton" data-corners="true" data-icon="back" 
+					data-transition="slide" data-direction="reverse" style="color: white; text-decoration: none; 
+					margin-top:0.2em; height:3em;" data-rel="back" data-iconpos="notext" data-shadow="true"></a>
+					<h3 style="font-family: Source Sans Pro; font-size: x-large; vertical-align: middle">Coptify</h3>
+				</div>
+				<div data-role="content" style="padding: 15px">
+					<!--application UI goes here-->
+		    			เรื่อง<br/>
+		    			<input type="text">
+		    			ชื่อผู้แจ้ง<br/>
+		    			<input type="text">
+		    			รูปภาพ<br/>
+		    			<div data-role="collapsible" id="addImage">
+							<h3>เพิ่มรูปภาพ</h3>
+							<div id="addedImage" align="center">
+								<img border="0" src="images/icon.png" width="100" height="100"  onclick="AddNewImage()">
+							</div>
+						</div>
+						<br/>
+						รายละเอียด<br/>
+						<textarea id="textarea">
+						</textarea>
+						
+						<div style="padding-top:1em; float: left;">
+							ตำแหน่ง (GPS):
+						</div>
+						<div style="float: right;">
+							<select name="flip" id="flip" data-role="slider">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+							</select>
+						</div>
+						<br/><br/><br/><br/>
+						
+						<button type="button">ส่ง</button>
+
+				</div>
+    		</div>
+    		
+			<div data-role="page" id="ContactPage">
+				<div data-role="header" id="header0" data-theme="f" style="height:4em;;" data-position="fixed">
+					<a href="#" data-role="button" id="backButton" data-corners="true" data-icon="back" 
+					data-transition="slide" data-direction="reverse" style="color: white; text-decoration: none; 
+					margin-top:0.2em; height:3em;" data-rel="back" data-iconpos="notext" data-shadow="true"></a>
+					<h3 style="font-family: Source Sans Pro; font-size: x-large; vertical-align: middle">Coptify</h3>
+				</div>
+				<div data-role="content" style="-ms-touch-action:auto;">
+					<ul data-role="listview" id="listview" data-inset="true" data-theme="f" data-split-theme="c" data-filter="true" data-filter-theme="d">
+						<li id="listitem"><a href="#" data-transition="slide">191<br>แจ้งเหตุด่วน-เหตุร้ายทุกชนิด</a></li>
+						<li id="listitem0"><a href="#">199<br>แจ้งอัคคีภัย สัตว์เข้าบ้าน</a></li>
+						<li id="listitem1"><a href="#">Item</a></li>
+						<li id="listitem1"><a href="#">Item</a></li>
+						<li id="listitem1"><a href="#">Item</a></li>
+						<li id="listitem1"><a href="#">Item</a></li>
+						<li id="listitem1"><a href="#">Item</a></li>
+						<li id="listitem1"><a href="#">Item</a></li>
+						<li id="listitem1"><a href="#">Item</a></li>
+						<li id="listitem1"><a href="#">Item</a></li>
+						<li id="listitem1"><a href="#">Item</a></li>
+					</ul>
+				</div>
+			</div>
+
+	<div data-role="dialog" id="dialogContact">
+		<div data-role="header" id="header1" data-theme="f">
+			<h3>Emergency Call</h3>
+		</div>
+		<div data-role="content" id="content0" align="center">
+			<br>
+			<div id="dialogPNO" style="font-size: 5em;"></div>
+			<br>
+			<div id="dialogName"></div>
+			<br><br>
+			<a href="" data-role="button" id="buttonCall" data-theme="e">โทร</a>
+		</div>
+	</div>
+
+	
+	<script src="js/initOptions.js"></script>
+    		<script src="js/main.js"></script>
+    		<script src="js/messages.js"></script>
+    	</body>
+</html>

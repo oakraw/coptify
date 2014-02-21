@@ -1,0 +1,72 @@
+
+/* Stylesheet content from css/main.css in folder common */
+/* Reset CSS */
+a, abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+	margin: 0;
+	padding: 0;
+}
+
+textarea:focus, input:focus, input,textarea{
+    -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-modify: read-write-plaintext-only; 
+    border: none !important;
+    margin: none !important;
+}
+
+/* Worklight container div */
+body {
+	width: 100%;
+	overflow: hidden;
+	overflow-y: hidden;	
+	/*-ms-touch-action: none;*/
+}
+
+.ui-bar-f
+{
+	background-color:#be4d4d;
+	color:white;
+}
+
+.ui-btn-up-e{
+	border: 1px solid 		#044062 /*{b-bup-border}*/;
+	background: 			#74C337 /*{b-bup-background-color}*/;
+	font-weight: bold;
+	color: 					#fff /*{b-bup-color}*/;
+	text-shadow: 0 /*{b-bup-shadow-x}*/ 1px /*{b-bup-shadow-y}*/ 0 /*{b-bup-shadow-radius}*/ #194b7e /*{b-bup-shadow-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #74C337 /*{b-bup-background-start}*/), to( #396b9e /*{b-bup-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #74C337 /*{b-bup-background-start}*/, #74C337 /*{b-bup-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #74C337 /*{b-bup-background-start}*/, #74C337 /*{b-bup-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #74C337 /*{b-bup-background-start}*/, #74C337 /*{b-bup-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #74C337 /*{b-bup-background-start}*/, #74C337 /*{b-bup-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #74C337 /*{b-bup-background-start}*/, #74C337 /*{b-bup-background-end}*/);
+	
+}
+
+#feedBox{
+	width: 90%;
+	height: 20em;
+	background-color: white;
+	color:black;
+	text-wrap:suppress;
+	padding:0.5em;
+	overflow-x:hidden;
+	overflow-y:auto;
+	margin-top: 3em;
+}
+
+ul li a span#phoneNo{
+	color:red;
+}
+
+/* Stylesheet content from css/main.css in folder windowsphone8 */
+
+/* this CSS file extends the application CSS file found under common\css */
+
+/* body should stretch in a Windows Phone application */
+body {
+	height: auto;
+	min-height: 100%;
+	width: 100%;
+	overflow: auto;
+}
